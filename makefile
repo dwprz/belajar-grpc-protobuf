@@ -13,3 +13,8 @@ protoc-go:
 
 .PHONY: build
 build: clean protoc-go
+
+.PHONY: tag
+tag:
+	git tag ${tag}
+	git push origin ${tag}
