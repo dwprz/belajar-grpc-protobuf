@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto;
+
+import "proto/type/response.proto";
+import "proto/type/request.proto";
+
+option go_package = "github.com/dwprz/belajar-grpc-protobuf/protogen";
+
+service UserService {
+    rpc SayHello(proto.type.Request) returns (proto.type.Response) {}
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package proto.type;
+
+option go_package = "github.com/dwprz/belajar-grpc-protobuf/protogen";
+
+message Request {
+    string data  = 1;
+}
