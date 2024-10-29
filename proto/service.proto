@@ -9,4 +9,5 @@ option go_package = "github.com/dwprz/belajar-grpc-protobuf/protogen";
 
 service UserService {
     rpc SayHello(proto.type.Request) returns (proto.type.Response) {}
+    rpc Sum(proto.type.SumReq) returns(proto.type.SumRes) {}
 }

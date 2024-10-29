@@ -7,3 +7,7 @@ option go_package = "github.com/dwprz/belajar-grpc-protobuf/protogen";
 message Response {
     string data  = 1;
 }
+
+message SumRes{
+    int32 data = 1;
+}
